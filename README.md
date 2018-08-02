@@ -38,15 +38,16 @@ process.env: 返回一个包含用户环境信息的对象
 
 如果不希望这里涉及到的路径和执行webpack命令时的具体路径相关，而是希望相对于配置文件的路径的话，就需要使用path模块：
 
-`var path = require('path')
+`var path = require('path')`
+`module.exports = {`
+    `entry: path.resolve(__dirname, './app.js'),`
+    `output: {`
+        `path: path.resolve(__dirname, './output'),`
+        `filename: 'output-file.js'`
+    `}`
+`}`
 
-module.exports = {
-    entry: path.resolve(__dirname, './app.js'),
-    output: {
-        path: path.resolve(__dirname, './output'),
-        filename: 'output-file.js'
-    }
-}`
+
 
 entry有三种形式：字符串，数组，对象
 
