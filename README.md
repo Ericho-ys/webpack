@@ -48,3 +48,9 @@ module.exports = {
     }
 }`
 
+entry有三种形式：字符串，数组，对象
+
+字符串跟数组都是对象形式的简化，对象是以key|value的形式。key可以是简单的字符串，对应output.filename,key还可以是路径字符串
+
+此时webpack会自动生成路径目录，并将路径的最后作为[name]。这个特性在多页面配置下也是很有用的。
+
