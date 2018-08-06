@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "webpack --config  build/webpack.config.js"
+    "start": "webpack --watch --config  build/webpack.config.js"
   },
   "author": "",
   "license": "ISC",

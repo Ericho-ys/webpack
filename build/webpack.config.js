@@ -1,6 +1,7 @@
 var path = require('path')
 var htmlWebpackPlugin = require('html-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const utils = require('./utils')
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
@@ -8,7 +9,8 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: "[name].js" 
+    filename: utils.assetsPath('js/[name].[chunkhash].js'),
+    chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   devtool: 'eval-source-map',
   plugins : [
