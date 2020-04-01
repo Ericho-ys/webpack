@@ -1,0 +1,7 @@
+$bgColor: red !default;
+html {
+  background-color: $bgColor;
+  .red{
+      color: red;
+  }
+}
