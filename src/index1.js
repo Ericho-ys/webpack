@@ -1,9 +1,9 @@
 import _ from 'loadsh'
 import { print } from './print'
-require('./common/common.css')
-require('./index1.scss')
-// import './common/common.css'
-// import './index1.scss'
+// require('./common/common.css')
+// require('./index1.scss')
+import './common/common.css'
+import './index1.scss'
 function component() {
     var element = document.createElement('div');
   

@@ -12,7 +12,12 @@ module.exports = {
     path: path.resolve(__dirname, "../dist")
   },
   module: {
-    rules: []
+    rules: [
+      {
+        test: /\.js$/,
+        use: ['babel-loader']
+      }
+    ]
   },
   devtool: 'inline-source-map',
   plugins: [

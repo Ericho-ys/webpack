@@ -2,6 +2,8 @@ $bgColor: red !default;
 html {
   background-color: $bgColor;
   .red{
+    font-size: 28px;
       color: red;
+      display: flex;
   }
 }

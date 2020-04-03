@@ -1,0 +1,16 @@
+{
+    "plugins": [
+        ["@babel/plugin-transform-runtime", {
+                    "absoluteRuntime": false,
+                    "corejs": 3,
+                    "helpers": true,
+                    "regenerator": true,
+                    "useESModules": true
+                 }]
+    ],
+    "presets": [
+        ["@babel/preset-env", {
+            "modules": false,// 对ES6的模块文件不做转化，以便使用tree shaking、sideEffects等
+        }]
+    ],
+}
