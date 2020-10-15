@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config entryoutput/build/webpack.config.js"
+    "build": "webpack --config module/build/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Ericho-ys/webpack#readme",
   "devDependencies": {
+    "css-loader": "^5.0.0",
     "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^2.0.0",
     "webpack": "^5.1.0",
     "webpack-cli": "^4.0.0"
   }
