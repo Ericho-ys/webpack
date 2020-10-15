@@ -1,0 +1,1 @@
+(()=>{var r={725:r=>{r.exports=function(r){return document.querySelector(r)}}},e={};(function t(o){if(e[o])return e[o].exports;var n=e[o]={exports:{}};return r[o](n,n.exports,t),n.exports})(725)("#app2").innerHTML="hello world"})();

@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Ericho-ys/webpack#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
     "webpack": "^5.1.0",
     "webpack-cli": "^4.0.0"
   }
