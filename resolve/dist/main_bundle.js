@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector("#app");e.innerHTML="hello world",setTimeout((function(){!function(e,t){e.innerHTML="test"}(e)}),1e3)})();
