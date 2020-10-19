@@ -48,3 +48,7 @@ process.env: 返回一个包含用户环境信息的对象
 √ --env: Environment passed to the configuration when it is a function
 √ --name: Name of the configuration. Used when loading multiple configurations.
 √ --config-name: Name of the configuration to use
+
+# 兼容问题
+
+webpack-cli4.0.0 与 webpack-dev-server3.11.0 不兼容，需卸载4.0.0，安装webpack-cli3.0.0 
