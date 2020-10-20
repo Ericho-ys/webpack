@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://webpack_study/./babel/src/js/index.js"],"names":["console","log"],"mappings":"AAIAA,QAAQC,IADA","file":"js/main_bundle.js","sourcesContent":["class A {}\r\n\r\nconst b = 1234\r\nlet a = 1\r\nconsole.log(a)"],"sourceRoot":""}

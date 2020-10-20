@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config otherConfig/build/webpack.config.js",
+    "build": "webpack --config babel/build/webpack.config.js",
     "start": "webpack-dev-server --open --hot --config devServer/build/webpack.config.js"
   },
   "repository": {
@@ -19,11 +19,20 @@
   },
   "homepage": "https://github.com/Ericho-ys/webpack#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.0",
     "html-webpack-plugin": "^4.5.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.1.3",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/polyfill": "^7.12.1",
+    "core-js": "^2.6.11"
   }
 }
