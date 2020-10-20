@@ -5,7 +5,7 @@ const {
 } = require('clean-webpack-plugin')
 module.exports = {
     // context: path.resolve(__dirname, '../src'),
-    entry: [path.resolve(__dirname, '../src/js/index.js')],
+    entry: [ '@babel/polyfill', path.resolve(__dirname, '../src/js/index.js')],
     output: {
         filename: 'js/[name]_bundle.js',
         path: path.resolve(__dirname, '../dist')
@@ -24,5 +24,8 @@ module.exports = {
             filename: path.resolve(__dirname, '../dist/index.html'),
             template: path.resolve(__dirname, '../index.html'),
         })
-    ]
+    ],
+    devServer: {
+        contentBase: path.resolve(__dirname, '../dist')
+    }
 }
