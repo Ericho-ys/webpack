@@ -5,7 +5,7 @@ const {
 } = require('clean-webpack-plugin')
 module.exports = {
     // context: path.resolve(__dirname, '../src'),
-    entry: [ '@babel/polyfill', path.resolve(__dirname, '../src/js/index.js')],
+    entry: ['core-js/pure', path.resolve(__dirname, '../src/js/index.js')],
     output: {
         filename: 'js/[name]_bundle.js',
         path: path.resolve(__dirname, '../dist')

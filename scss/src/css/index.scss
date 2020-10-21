@@ -1,0 +1,6 @@
+@import "./common.scss";
+
+#app {
+    @include border_radius(4px);
+    background-color: lighten($color: #5b8b9efd, $amount: 0);
+}
